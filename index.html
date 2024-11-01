@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<HTML>
+<HEAD>
+<!-- Подключение файла стилей-->
+<LINK rel="stylesheet" type="text/css" href="main1.css"> 
+<!-- Метаданные-->
+	<META http-equiv=Content-Type content="text/html; charset=utf-8">
+	<META NAME="Description" CONTENT="Страница с личной информацией">
+	<META NAME="Keywords" CONTENT="Группа, кафедра, расписание, карта">
+	<META NAME="Author" CONTENT="Мажитова Елена">
+<!-- Название страницы-->
+<TITLE>Создание HTML-документа с формой</TITLE>
+</HEAD>
+<!-- Тело страницы-->
+<BODY>
+<!-- POST-->
+	<FORM id="form" name="form" action="action_post.php"  method="post">
+<!-- GET 
+	<FORM id="form" name="form" action="action_get.php"  method="get">-->
+<DIV ID="div1">
+	<P>Имя:</P>
+	<P><INPUT NAME="name" TYPE="text" SIZE="35" VALUE=""></P>
+	<p>Фамилия:</p>
+	<P><INPUT NAME="family" TYPE="text" SIZE="35" VALUE="">  </P>
+</DIV>
+<DIV ID="div7">
+	<P>Логин:</P>
+	<P><INPUT TYPE="TEXT"  NAME="login"  SIZE=35 VALUE=""></P>
+	<p>Пароль:</p>
+	<P><INPUT TYPE="PASSWORD"   NAME="pass" SIZE=35 VALUE=""></P>
+</DIV>
+
+<DIV ID="div2">
+  <P>Выберите время</p> 
+	<P>	<INPUT TYPE=RADIO   NAME="time" VALUE="09:00-10:00">09:00-10:00</P>
+	<P>	<INPUT TYPE=RADIO   NAME="time" VALUE="10:30-11:30">10:30-11:30</P>
+	<P>	<INPUT TYPE=RADIO   NAME="time" VALUE="12:00-13:00">12:00-13:00</P>
+	<P>	<INPUT TYPE=RADIO   NAME="time" VALUE="14:00-15:00">14:00-15:00</P>
+	<P>	<INPUT TYPE=RADIO   NAME="time" VALUE="15:30-16:30">15:30-16:30</P>
+	<P>	<INPUT TYPE=RADIO   NAME="time" VALUE="17:00-18:00">17:00-18:00</P>
+</DIV>
+
+<DIV ID="div3">
+<P>Выберите форму контроля</P>
+	<P><INPUT TYPE=CHECKBOX   NAME="view[]" VALUE="тест">тест</P>
+	<P><INPUT TYPE=CHECKBOX   NAME="view[]" VALUE="собеседование">собеседование</P>
+	<P><INPUT TYPE=CHECKBOX   NAME="view[]" VALUE="доклад">доклад</P>
+	<P><INPUT TYPE=CHECKBOX   NAME="view[]" VALUE="контрольная работа">контрольная работа</P>
+</DIV>  
+
+<DIV ID="div4">
+<P>Выберите предмет</P>
+    <SELECT name="subject">
+        <OPTION NAME="obj" value="Предмет не выбран">Выберите предмет</OPTION>
+  		<OPTION NAME="obj1" value="ПТИ">ПТИ</OPTION> 
+		<OPTION NAME="obj2" value="ТА ФЯ">ТА ФЯ</OPTION> 
+		<OPTION NAME="obj3" value="ПИС">ПИС</OPTION> 
+		<OPTION NAME="obj4" value="Англ.яз.">Англ.яз.</OPTION> 
+		<OPTION NAME="obj5" value="СТ">СТ</OPTION> 
+		<OPTION NAME="obj6" value="ОИБ">ОИБ</OPTION> 
+		<OPTION NAME="obj7" value="ФП">ФП</OPTION> 
+	</SELECT> 
+</DIV>
+
+<DIV ID="div5">
+	<P>Проверить введенные данные</P> 
+	<P><input type="submit"  value="Отправить"></P>
+</DIV>
+
+<DIV ID="div6">
+	<P>Дополнительная информация</P> 	
+	<P><textarea name="text"  ROWS="10" value=></textarea></P>
+</DIV>  
+</FORM>
+<!-- Подключение файла скрипта-->
+<SCRIPT type="text/javascript" src="script.js"></SCRIPT> 
+</BODY>
+</HTML>
