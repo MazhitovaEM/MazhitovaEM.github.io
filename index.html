@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<HTML>
+<HEAD>
+<!-- Метаданные-->
+	<META http-equiv=Content-Type content="text/html; charset=utf-8">
+<!-- Название страницы-->
+<TITLE>Создание HTML-документа с формой</TITLE>
+</HEAD>
+<!-- Тело страницы-->
+<BODY>
+<FORM id="form" name="form" onsubmit="Complete()"  method="post">
+	
+  <P>Имя:</P>
+	<P><INPUT NAME="name" TYPE="text" SIZE="35" VALUE=""></P>
+
+<P>Выберите предмет</P>
+    <SELECT name="subject">
+    <OPTION NAME="obj" value="Предмет не выбран">Выберите предмет</OPTION>
+    <OPTION NAME="obj1" value="ПТИ">ПТИ</OPTION> 
+		<OPTION NAME="obj2" value="ТА ФЯ">ТА ФЯ</OPTION>  
+	</SELECT> 
+
+	<P>Проверить введенные данные</P> 
+	<P><input type="submit"  value="Отправить"></P>
+</FORM>
+<!-- Подключение файла скрипта-->
+<SCRIPT type="text/javascript" src="script.js"></SCRIPT> 
+</BODY>
+</HTML>
